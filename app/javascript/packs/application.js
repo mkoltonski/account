@@ -15,10 +15,17 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from '../components/App';
 
 document.addEventListener('DOMContentLoaded', () => {
-  render(<App />, document.querySelector('#root'));
+  render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.querySelector('#root'),
+    );
 });

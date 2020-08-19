@@ -12,7 +12,7 @@ const PropsRoute = ({ component, ...rest }) => (
 );
 
 PropsRoute.propTypes = {
-  compoenent: PropTypes.func.isRequired,
+  component: PropTypes.func.isRequired,
 };
 
 export default PropsRoute;
